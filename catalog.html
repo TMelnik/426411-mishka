@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="#">
+    <title>MISHKA - Каталог товаров</title>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="top-bar__logo">
+        <a href="index.html"><img src="http://placehold.it/86x35" width="86" height="35" alt="logo"></a>
+      </div>
+      <nav class="top-bar-nav">
+        <button class="top-bar-nav__toggle"></button>
+        <div class="top-bar-nav__wrapper">
+          <ul class="top-bar-nav__list">
+            <li class="top-bar-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="top-bar-nav__item"><a href="#">Вязание на заказ</a></li>
+            <li class="top-bar-nav__item"><a href="#">Поиск по сайту</a></li>
+            <li class="top-bar-nav__item"><a href="#">Корзина: пока пуста</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <header class="page-header">
+        <h1 class="page-header__title">Каталог товаров</h1>
+    </header>
+    <main>
+      <section class="catalog">
+        <div class="catalog__item">
+          <img src="http://placehold.it/260x195" width="260" height="195" alt="toy">
+          <h3 class="catalog__item-title">Зайчик-попрыгайчик</h3>
+          <p class="catalog__item-desc">Рост 30 см, вес 200 г</p>
+          <p class="catalog__item-price"><b>1 200 руб.</b></p>
+          <a class="catalog__basket" href="#popup">basket</a>
+        </div>
+        <div class="catalog__item">
+          <img src="http://placehold.it/260x195" width="260" height="195" alt="basket">
+          <h3 class="catalog__item-title">Корзинка для белья</h3>
+          <p class="catalog__item-desc">Диаметр 15 см, высота 10см</p>
+          <p class="catalog__item-price"><b>690 руб.</b></p>
+          <a class="catalog__basket" href="#popup">basket</a>
+        </div>
+        <div class="catalog__item">
+          <img src="http://placehold.it/260x195" width="260" height="195" alt="big-basket">
+          <h3 class="catalog__item-title">Большая корзинка для игрушек</h3>
+          <p class="catalog__item-desc">Диаметр 30 см, высота 30см</p>
+          <p class="catalog__item-price"><b>1 500 руб.</b></p>
+          <a class="catalog__basket" href="#popup">basket</a>
+        </div>
+      </section>
+      <section class="promo">
+        <h2 class="promo__title">Процесс производства</h2>
+        <video controls poster="http://placehold.it/260x150" width="260" height="150"><source src="#"></video>
+        <p class="promo__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
+        <a class="promo__btn btn" href="form.html">Сделать заказ</a>
+      </section>
+    </main>
+    <footer class="footer-bottom">
+      <div class="footer-bottom__socials">
+        <a href="#">insta</a>
+        <a href="#">fb</a>
+        <a href="#">tw</a>
+      </div>
+      <div class="footer-bottom__copyright">
+        Разработано <a href="https://htmlacademy.ru">Academy-logo</a>
+      </div>
+    </footer>
+    <div class="popup">
+      <form class="popup-form" action="https://echo.htmlacademy.ru/" method="post">
+        <h2 class="popup-form__title">Добавить в корзину</h2>
+        <fieldset class="popup-form__field">
+          <legend>Выберите размер:</legend>
+          <label><input class="popup-form__item-size" type="radio" name="item-size" value="s" checked>s</label>
+          <label><input class="popup-form__item-size" type="radio" name="item-size" value="m">m</label>
+          <label><input class="popup-form__item-size" type="radio" name="item-size" value="l">l</label>
+          <br>
+          <button class="popup-form__btn btn">Добавить</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
