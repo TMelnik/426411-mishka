@@ -8,24 +8,24 @@
   </head>
   <body>
   <header classs="page-header">
-    <a href="page-header__logo">
+    <a class="page-logo" href="page-header__logo">
       <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="logo">
     </a>
-    <nav class="main__nav">
-      <button class="main-nav__toggle" type="button">открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+    <nav class="nav">
+      <button class="nav__toggle" type="button">открыть меню</button>
+      <div class="nav__wrapper">
+        <ul class="site-list nav__list">
           <li class="site-list__item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a href="#">Вязание на заказ</a>
+            <a class="site-list__link" href="#">Вязание на заказ</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Поиск по сайту</a>
+            <a class="site-list__link" href="#">Поиск по сайту</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Корзина: пока пуста</a>
+            <a class="site-list__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </div>
@@ -39,73 +39,73 @@
         <p class="order__greeting">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="order__form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="order__form-field order__form-field--type">
-            <legend>Тип</legend>
-            <label>
-              <span class="order__form-label">Аксессуар для интерьера</span>
+            <legend class="legend-type">Тип</legend>
+            <label class="label-type">
               <input type="radio" name="type" value="Аксессуар для интерьера" checked>
+              <span class="order__form-label">Аксессуар для интерьера</span>
             </label>
-            <label>
-              <span class="order__form-label">Детская игрушка</span>
+            <label class="label-type">
               <input type="radio" name="type" value="Детская игрушка">
+              <span class="order__form-label">Детская игрушка</span>
             </label>
           </fieldset>
           <fieldset class="order__form-field order__form-field--color">
-            <legend>Цвет</legend>
-            <label>
-              <span class="order__form-label">Белый</span>
+            <legend class="legend-color">Цвет</legend>
+            <label class="legend-color">
               <input type="checkbox" name="color" value="Белый" checked>
+              <span class="order__form-label">Белый</span>
             </label>
-            <label>
-              <span class="order__form-label">Серый</span>
+            <label class="legend-color">
               <input type="checkbox" name="color" value="Серый" checked>
+              <span class="order__form-label">Серый</span>
             </label>
-            <label>
-              <span class="order__form-label">«Тиффани»</span>
+            <label class="legend-color">
               <input type="checkbox" name="color" value="«Тиффани»">
+              <span class="order__form-label">«Тиффани»</span>
             </label>
-            <label>
-              <span class="order__form-label">Черный</span>
+            <label class="legend-color">
               <input type="checkbox" name="color" value="Черный">
+              <span class="order__form-label">Черный</span>
             </label>
-            <label>
-              <span class="order__form-label">Розовый</span>
+            <label class="legend-color">
               <input type="checkbox" name="color" value="Розовый">
+              <span class="order__form-label">Розовый</span>
             </label>
-            <label>
-              <span class="order__form-label">Оранжевый</span>
+            <label class="legend-color">
               <input type="checkbox" name="color" value="Оранжевый">
+              <span class="order__form-label">Оранжевый</span>
             </label>
           </fieldset>
           <fieldset class="order__form-field order__form-field--name">
-            <legend>ФИО</legend>
-            <label>
-              <span class="order__form-label">Имя</span>
+            <legend class="legend-info legend-name">ФИО</legend>
+            <label class="label-info label-name">
               <input type="text" name="name" placeholder="Введите ваше имя*" required>
+              <span class="order__form-label">Имя</span>
             </label>
-            <label>
-              <span class="order__form-label">Фамилия</span>
+            <label class="label-info label-name">
               <input type="text" name="surname" placeholder="Укажите фамилию*" required>
+              <span class="order__form-label">Фамилия</span>
             </label>
-            <label>
-              <span class="order__form-label">Отчество</span>
+            <label class="label-info label-name">
               <input type="text" name="last-name" placeholder="Отчество, если желаете">
+              <span class="order__form-label">Отчество</span>
             </label>
           </fieldset>
           <fieldset class="order__form-field order__form-field--phone">
-            <legend>Тел</legend>
-            <label>
+            <legend class="legend-info legend-tel">Тел</legend>
+            <label class="label-info label-tel">
               <input type="tel" name="phone" placeholder="+7 XXX XX XX*" required>
             </label>
           </fieldset>
           <fieldset class="order__form-field order__form-field--email">
-            <legend>E-mail</legend>
-            <label>
+            <legend class="legend-info legend-mail">E-mail</legend>
+            <label class="label-info labal-mail">
               <input type="email" name="email" placeholder="Ваш Email*" required>
             </label>
           </fieldset>
           <fieldset class="order__form-field order__form-field--add-info">
-            <legend>доп</legend>
-            <label>
+            <legend class="legend-info legend-info__add">доп</legend>
+            <label class="label-info label-info__add">
               <textarea name="add-info" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </label>
             <p>*Поля обязательны для заполнения</p>

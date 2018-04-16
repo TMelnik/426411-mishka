@@ -8,24 +8,24 @@
   </head>
   <body>
     <header classs="page-header">
-      <a href="page-header__logo">
+      <a class="page-logo" href="page-header__logo">
         <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="logo">
       </a>
-      <nav class="main__nav">
-        <button class="main-nav__toggle" type="button">открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+      <nav class="nav">
+        <button class="nav__toggle" type="button">открыть меню</button>
+        <div class="nav__wrapper">
+          <ul class="site-list nav__list">
             <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Вязание на заказ</a>
+              <a class="site-list__link" href="#">Вязание на заказ</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Поиск по сайту</a>
+              <a class="site-list__link" href="#">Поиск по сайту</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Корзина: пока пуста</a>
+              <a class="site-list__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -38,36 +38,33 @@
       <section class="card">
         <ul class="card-items">
           <li class="card__btn card__btn--light"><a href="#">Предметы интерьера</a></li>
-          <li class="cardg__btn card__btn--dark"><a href="#">Детские игрушки</a></li>
+          <li class="card__btn card__btn--dark"><a href="#">Детские игрушки</a></li>
         </ul>
       </section>
-      <section class="card-items">
-        <div class="card-items">
-          <h2 class="card__title">Вязаные корзинки</h2>
-          <h3 class="card__advant">Товар недели</h3>
-          <p class="card__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="card__table">
-            <tr class="card__table-row">
-              <td class="card__table-cell">Цвет:</td>
-              <td class="card__table-cell">«Тиффани»/серый</td>
+      <section class="card-ads">
+          <h2 class="card-ads__title">Вязаные корзинки <strong class="card-ads__advant">Товар недели</strong></h2>
+          <p class="card-ads__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <table class="card-ads__table">
+            <tr class="card-ads__table-row">
+              <td class="card-ads__table-cell">Цвет:</td>
+              <td class="card-ads__table-cell">«Тиффани»/серый</td>
             </tr>
-            <tr class="card__table-row">
-              <td class="card__table-cell">Диаметр:</td>
-              <td class="card--card__table-cell">25 см</td>
+            <tr class="card-ads__table-row">
+              <td class="card-ads__table-cell">Диаметр:</td>
+              <td class="card-ads__table-cell">25 см</td>
             </tr>
-            <tr class="card__table-row">
-              <td class="card__table-cell">Высота:</td>
-              <td class="card__table-cell">15 см</td>
+            <tr class="card-ads__table-row">
+              <td class="card-ads__table-cell">Высота:</td>
+              <td class="card-ads__table-cell">15 см</td>
             </tr>
           </table>
-          <div class="card__picture">
+          <div class="card-ads__picture">
             <img src="http://placehold.it/260x315" width="260" height="315" alt="triple-set">
           </div>
           <div class="card__price">
             Цена: 990 руб.
           </div>
           <button type="button" class="card__btn btn" href="#">ЗАКАЗАТЬ</button>
-        </div>
       </section>
       <section class="features">
         <h2 class="features__title">Коротко о нас:</h2>
