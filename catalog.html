@@ -37,30 +37,30 @@
       </section>
       <section class="card">
         <div class="card__item">
-          <img src="http://placehold.it/260x195" width="260" height="195" alt="toy">
-          <h3 class="card-title">Зайчик-попрыгайчик</h3>
-          <p class="card-description">Рост 30 см, вес 200 г</p>
-          <p class="card-price"><b>1 200 руб.</b></p>
+          <img class ="card__item-img" src="http://placehold.it/260x195" width="260" height="195" alt="toy">
+          <h3 class="card__title">Зайчик-попрыгайчик</h3>
+          <p class="card__description">Рост 30 см, вес 200 г</p>
+          <p class="card__price"><b>1 200 руб.</b></p>
           <a class="card__basket" href="#popup">basket</a>
         </div>
         <div class="card__item">
-          <img src="http://placehold.it/260x195" width="260" height="195" alt="basket">
-          <h3 class="card-title">Корзинка для белья</h3>
-          <p class="card-description">Диаметр 15 см, высота 10см</p>
-          <p class="card-price"><b>690 руб.</b></p>
+          <img class ="card__item-img" src="http://placehold.it/260x195" width="260" height="195" alt="basket">
+          <h3 class="card__title">Корзинка для белья</h3>
+          <p class="card__description">Диаметр 15 см, высота 10см</p>
+          <p class="card__price"><b>690 руб.</b></p>
           <a class="card__basket" href="#popup">basket</a>
         </div>
         <div class="card__item">
-          <img src="http://placehold.it/260x195" width="260" height="195" alt="big-basket">
-          <h3 class="card-title">Большая корзинка для игрушек</h3>
-          <p class="card-description">Диаметр 30 см, высота 30см</p>
-          <p class="card-price"><b>1 500 руб.</b></p>
+          <img class ="card__item-img" src="http://placehold.it/260x195" width="260" height="195" alt="big-basket">
+          <h3 class="card__title">Большая корзинка для игрушек</h3>
+          <p class="card__description">Диаметр 30 см, высота 30см</p>
+          <p class="card__price"><b>1 500 руб.</b></p>
           <a class="card__basket" href="#popup">basket</a>
         </div>
       </section>
       <section class="promo">
         <h2 class="promo__title">Процесс производства</h2>
-        <video controls poster="http://placehold.it/260x150" width="260" height="150"><source src="#"></video>
+        <video class="promo__video" controls poster="http://placehold.it/260x150" width="260" height="150"><source src="#"></video>
         <p class="promo__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
         <a class="promo__btn btn" href="form.html">Сделать заказ</a>
       </section>
@@ -87,14 +87,14 @@
       </div>
     </footer>
     </footer>
-    <div class="popup">
+    <div class="popup ">
       <form class="popup-form" action="https://echo.htmlacademy.ru/" method="post">
         <h2 class="popup-form__title">Добавить в корзину</h2>
         <fieldset class="popup-form__field">
-          <legend>Выберите размер:</legend>
-          <label><input class="popup-form__item-size" type="radio" name="item-size" value="s" checked>s</label>
-          <label><input class="popup-form__item-size" type="radio" name="item-size" value="m">m</label>
-          <label><input class="popup-form__item-size" type="radio" name="item-size" value="l">l</label>
+          <legend class="popup-form__legend">Выберите размер:</legend>
+          <label class="popup-form__label"><input class="popup-form__item-size" type="radio" name="item-size" value="s" checked>s</label>
+          <label class="popup-form__label"><input class="popup-form__item-size" type="radio" name="item-size" value="m">m</label>
+          <label class="popup-form__label"><input class="popup-form__item-size" type="radio" name="item-size" value="l">l</label>
           <br>
           <button class="popup-form__btn btn" type="submit">Добавить</button>
         </fieldset>

@@ -59,12 +59,12 @@
             </tr>
           </table>
           <div class="card-ads__picture">
-            <img src="http://placehold.it/260x315" width="260" height="315" alt="triple-set">
+            <img class="card-ads__img" src="http://placehold.it/260x315" width="260" height="315" alt="triple-set">
           </div>
           <div class="card__price">
             Цена: 990 руб.
           </div>
-          <button type="button" class="card__btn btn" href="#">ЗАКАЗАТЬ</button>
+          <button class="card__btn btn" type="button" class="card__btn btn" href="#">ЗАКАЗАТЬ</button>
       </section>
       <section class="features">
         <h2 class="features__title">Коротко о нас:</h2>
@@ -81,7 +81,7 @@
         <h2 class="title title--feedback">Отзывы</h2>
         <div class="slider">
           <div class="slider__item">
-            <article class="feedback">
+            <article class="feedback__item">
               <blockquote class="feedback__text">
                 Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
               </blockquote>
@@ -90,8 +90,8 @@
               </h3>
             </article>
           </div>
-          <button type="button" class="slider__arrow slider__arrow--prev">prev</button>
-          <button type="button" class="slider__arrow slider__arrow--next">next</button>
+          <button class="slider__arrow slider__arrow--prev" type="button">prev</button>
+          <button class="slider__arrow slider__arrow--next" type="button">next</button>
         </div>
       </section>
       <section class="contacts">
@@ -107,7 +107,7 @@
           </tr>
         </table>
         <div class="contacts__map">
-          <img src="http://placehold.it/770x457" width="770" height="457" alt="map">
+          <img class="contacts__map-img" src="http://placehold.it/770x457" width="770" height="457" alt="map">
         </div>
         <div class="contacts__btn">
           <a class="btn" href="#">Напишите нам</a>
@@ -135,14 +135,14 @@
         </div>
       </div>
     </footer>
-    <div class="popup">
+    <div class="popup hidden">
       <form class="popup-form" action="https://echo.htmlacademy.ru/" method="post">
         <h2 class="popup-form__title">Добавить в корзину</h2>
         <fieldset class="popup-form__field">
-          <legend>Выберите размер:</legend>
-          <label><input class="popup-form__item-size" type="radio" name="item-size" value="s" checked>s</label>
-          <label><input class="popup-form__item-size" type="radio" name="item-size" value="m">m</label>
-          <label><input class="popup-form__item-size" type="radio" name="item-size" value="l">l</label>
+          <legend class="popup-form__legend">Выберите размер:</legend>
+          <label class="popup-form__label"><input class="popup-form__item-size" type="radio" name="item-size" value="s" checked>s</label>
+          <label class="popup-form__label"><input class="popup-form__item-size" type="radio" name="item-size" value="m">m</label>
+          <label class="popup-form__label"><input class="popup-form__item-size" type="radio" name="item-size" value="l">l</label>
           <br>
           <button class="popup-form__btn btn" type="submit">Добавить</button>
         </fieldset>
