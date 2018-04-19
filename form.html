@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="#">
+    <title>MISHKA - форма заказа</title>
+  </head>
+  <body>
+  <header classs="page-header">
+    <a class="page-logo" href="page-header__logo">
+      <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="logo">
+    </a>
+    <nav class="nav">
+      <button class="nav__toggle" type="button">открыть меню</button>
+      <div class="nav__wrapper">
+        <ul class="site-list nav__list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link" href="#">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+    <main class="main">
+      <section class="hero">
+        <h1 class="title">Вязание на заказ</h1>
+      </section>
+      <div class="form-wrapper">
+        <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form action="https://echo.htmlacademy.ru/" method="post" class="form">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Тип</legend>
+            <div class="radio-button">
+              <input type="radio" name="type" id="accesories" calss="radio-button__input" checked>
+              <label for="accesories" class="radio-button__label">Аксессуар для интерьера</label>
+            </div>
+            <div class="radio-button">
+              <input type="radio" name="type" id="toy" calss="radio-button__input">
+              <label for="accesories" class="radio-button__label">Детская игрушка</label>
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Цвет</legend>
+            <div class="check-box">
+              <input type="radio"  id="white-color" calss="check-box__input" checked>
+              <label for="white-color" class="check-box__label>Белый</label>
+            </div>
+            <div class="check-box">
+              <input type="radio"  id="grey-color" calss="check-box__input" checked>
+              <label for="grey-color" class="check-box__label">Серый</label>
+            </div>
+            <div class="check-box">
+              <input type="radio"  id="tiffani-color" calss="check-box__input">
+              <label for="tiffani-color" class="check-box__label">«Тиффани»</label>
+            </div>
+            <div class="check-box">
+              <input type="radio"  id="black-color" calss="check-box__input">
+              <label for="black-color" class="check-box__label">Черный</label>
+            </div>
+            <div class="check-box">
+              <input type="radio"  id="pink-color" calss="check-box__input">
+              <label for="pink-color" class="check-box__label">Розовый</label>
+            </div>
+            <div class="check-box">
+              <input type="radio"  id="orange-color" calss="check-box__input">
+              <label for="orange-color" class="check-box__label">Оранжевый</label>
+            </div>
+          </fieldset>
+          <fieldset  class="form__fieldset">
+            <legend class="form__legend">Фио</legend>
+            <label for="name" class="form__label">Имя:</label>
+            <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required class="input input--text">
+            <label for="surname" class="form__label">Фамилия:</label>
+            <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required class="input input--text">
+            <label for="secondame" class="form__label">Отчество:</label>
+            <input type="text" name="secondame" id="secondame" placeholder="Отчество, если желаете" class="input input--text">
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Тел</legend>
+            <div class="input-wrapper">
+              <input type="tel" name="tel" id="tel" placeholder="+7 xxx хх хх*" class="input input--tel" required>
+              <svg class="ico input-wrapper__ico"></svg>
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">E-mail</legend>
+            <div class="input-wrapper">
+              <input type="email" name="email" id="eamil" placeholder="Ваш Email*" class="input input--email" required>
+              <svg class="ico input-wrapper__ico"></svg>
+            </div>
+          </fieldset>
+          <fieldset  class="form__fieldset">
+            <legend class="form__legend">Доп</legend>
+            <textarea name="description" id="description" cols="30" rows="10" class="textarea" placeholder="Опишите ваши пожелания к заказу"></textarea>
+          </fieldset>
+          <p class="form__caption"><sub>*</sub>поля обезательны для заполнения</p>
+          <button type="submit">Отправить заказ</button>
+        </form>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">insta</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">fb</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">tw</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive>Academy-logo"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
