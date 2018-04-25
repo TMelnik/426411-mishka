@@ -18,7 +18,7 @@
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a class="site-list__link" href="#">Вязание на заказ</a>
           </li>
           <li class="site-list__item">
@@ -32,80 +32,82 @@
     </nav>
   </header>
     <main class="main">
-      <section class="hero">
-        <h1 class="title">Вязание на заказ</h1>
-      </section>
-      <div class="form-wrapper">
-        <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <form action="https://echo.htmlacademy.ru/" method="post" class="form">
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Тип</legend>
-            <div class="radio-button">
-              <input type="radio" name="type" id="accesories" calss="radio-button__input" checked>
-              <label for="accesories" class="radio-button__label">Аксессуар для интерьера</label>
-            </div>
-            <div class="radio-button">
-              <input type="radio" name="type" id="toy" calss="radio-button__input">
-              <label for="accesories" class="radio-button__label">Детская игрушка</label>
-            </div>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Цвет</legend>
-            <div class="check-box">
-              <input type="radio"  id="white-color" calss="check-box__input" checked>
-              <label for="white-color" class="check-box__label>Белый</label>
-            </div>
-            <div class="check-box">
-              <input type="radio"  id="grey-color" calss="check-box__input" checked>
-              <label for="grey-color" class="check-box__label">Серый</label>
-            </div>
-            <div class="check-box">
-              <input type="radio"  id="tiffani-color" calss="check-box__input">
-              <label for="tiffani-color" class="check-box__label">«Тиффани»</label>
-            </div>
-            <div class="check-box">
-              <input type="radio"  id="black-color" calss="check-box__input">
-              <label for="black-color" class="check-box__label">Черный</label>
-            </div>
-            <div class="check-box">
-              <input type="radio"  id="pink-color" calss="check-box__input">
-              <label for="pink-color" class="check-box__label">Розовый</label>
-            </div>
-            <div class="check-box">
-              <input type="radio"  id="orange-color" calss="check-box__input">
-              <label for="orange-color" class="check-box__label">Оранжевый</label>
-            </div>
-          </fieldset>
-          <fieldset  class="form__fieldset">
-            <legend class="form__legend">Фио</legend>
-            <label for="name" class="form__label">Имя:</label>
-            <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required class="input input--text">
-            <label for="surname" class="form__label">Фамилия:</label>
-            <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required class="input input--text">
-            <label for="secondame" class="form__label">Отчество:</label>
-            <input type="text" name="secondame" id="secondame" placeholder="Отчество, если желаете" class="input input--text">
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Тел</legend>
-            <div class="input-wrapper">
-              <input type="tel" name="tel" id="tel" placeholder="+7 xxx хх хх*" class="input input--tel" required>
-              <svg class="ico input-wrapper__ico"></svg>
-            </div>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">E-mail</legend>
-            <div class="input-wrapper">
-              <input type="email" name="email" id="eamil" placeholder="Ваш Email*" class="input input--email" required>
-              <svg class="ico input-wrapper__ico"></svg>
-            </div>
-          </fieldset>
-          <fieldset  class="form__fieldset">
-            <legend class="form__legend">Доп</legend>
-            <textarea name="description" id="description" cols="30" rows="10" class="textarea" placeholder="Опишите ваши пожелания к заказу"></textarea>
-          </fieldset>
-          <p class="form__caption"><sub>*</sub>поля обезательны для заполнения</p>
-          <button type="submit">Отправить заказ</button>
-        </form>
+      <div class="page-content__wrapper">
+        <section class="hero">
+          <h1 class="title">Вязание на заказ</h1>
+        </section>
+        <div class="form-wrapper">
+          <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+          <form action="https://echo.htmlacademy.ru/" method="post" class="form">
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Тип</legend>
+              <div class="radio-button">
+                <input type="radio" name="type" id="accesories" calss="radio-button__input" checked>
+                <label for="accesories" class="radio-button__label">Аксессуар для интерьера</label>
+              </div>
+              <div class="radio-button">
+                <input type="radio" name="type" id="toy" calss="radio-button__input">
+                <label for="accesories" class="radio-button__label">Детская игрушка</label>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Цвет</legend>
+              <div class="check-box">
+                <input type="radio"  id="white-color" calss="check-box__input" checked>
+                <label for="white-color" class="check-box__label">Белый</label>
+              </div>
+              <div class="check-box">
+                <input type="checkbox"  id="grey-color" calss="check-box__input" checked>
+                <label for="grey-color" class="check-box__label">Серый</label>
+              </div>
+              <div class="check-box">
+                <input type="checkbox"  id="tiffani-color" calss="check-box__input">
+                <label for="tiffani-color" class="check-box__label">«Тиффани»</label>
+              </div>
+              <div class="check-box">
+                <input type="checkbox"  id="black-color" calss="check-box__input">
+                <label for="black-color" class="check-box__label">Черный</label>
+              </div>
+              <div class="check-box">
+                <input type="checkbox"  id="pink-color" calss="check-box__input">
+                <label for="pink-color" class="check-box__label">Розовый</label>
+              </div>
+              <div class="check-box">
+                <input type="checkbox"  id="orange-color" calss="check-box__input">
+                <label for="orange-color" class="check-box__label">Оранжевый</label>
+              </div>
+            </fieldset>
+            <fieldset  class="form__fieldset">
+              <legend class="form__legend">Фио</legend>
+              <label for="name" class="form__label">Имя:</label>
+              <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required class="input input--text">
+              <label for="surname" class="form__label">Фамилия:</label>
+              <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required class="input input--text">
+              <label for="secondame" class="form__label">Отчество:</label>
+              <input type="text" name="secondame" id="secondame" placeholder="Отчество, если желаете" class="input input--text">
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend--phone">Тел</legend>
+              <div class="input-wrapper">
+                <input type="tel" name="tel" id="tel" placeholder="+7 xxx хх хх*" class="input input--tel" required>
+                <svg class="ico input-wrapper__ico"></svg>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">E-mail</legend>
+              <div class="input-wrapper">
+                <input type="email" name="email" id="eamil" placeholder="Ваш Email*" class="input input--email" required>
+                <svg class="ico input-wrapper__ico"></svg>
+              </div>
+            </fieldset>
+            <fieldset  class="form__fieldset">
+              <legend class="form__legend">Доп</legend>
+              <textarea name="description" id="description" cols="30" rows="10" class="textarea" placeholder="Опишите ваши пожелания к заказу"></textarea>
+            </fieldset>
+            <p class="form__caption"><sub>*</sub>поля обезательны для заполнения</p>
+            <button class="button--make-order" type="submit">Отправить заказ</button>
+          </form>
+        </div>
       </div>
     </main>
     <footer class="page-footer">
@@ -123,9 +125,10 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive>Academy-logo"></a>
+        <div class="page-footer__copyright">
+          <a class="copyright" href="https://htmlacademy.ru/" target="_blank" title="Разработано HTML Academy">Разработано
+            <svg width="27" height="34"><use xlink:href="#logo-htmlacademy"></use></svg>
+          </a>
         </div>
       </div>
     </footer>
