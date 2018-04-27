@@ -1,0 +1,163 @@
+.features {
+  @include center();
+}
+
+.features__wrapper {
+  width: 100%;
+  padding-right: 9.4%;
+  padding-left: 9.3%;
+}
+
+.features__title {
+  @include font-set(700, 25px, 30px);
+  margin-top: 27px;
+}
+
+.features__list {
+  @include clear-list();
+}
+
+.features__item {
+  @include font-set(700, 17px, 20px);
+
+  position: relative;
+
+  box-sizing: border-box;
+  min-height: 100px;
+  margin-bottom: 18px;
+  padding-top: 65px;
+
+  &::after {
+    @include absolute-pseudo-element();
+
+    background-color: #ff8800;
+  }
+
+  &--material {
+    &::after {
+      top: 10px;
+      left: 8px;
+
+      width: 33px;
+      height: 38px;
+    }
+  }
+
+  &--style {
+    &::after {
+      top: 12px;
+      left: 0;
+
+      width: 47px;
+      height: 27px;
+    }
+  }
+
+  &--likes {
+    &::after {
+      top: 17px;
+      left: 7px;
+
+      width: 34px;
+      height: 27px;
+    }
+  }
+
+  &--handmade {
+    &::after {
+      top: 14px;
+      left: 3px;
+
+      width: 35px;
+      height: 34px;
+    }
+  }
+
+  &--producer {
+    &::after {
+      top: 15px;
+      left: -6px;
+
+      width: 55px;
+      height: 23px;
+    }
+  }
+
+  &--giftwrap {
+    &::after {
+      top: 13px;
+      left: 3px;
+
+      width: 33px;
+      height: 32px;
+    }
+  }
+}
+
+@media #{$tablet-widths} {
+
+  .benefits__wrapper {
+    flex-direction: column;
+    width: 668px;
+    padding-right: 0;
+    padding-bottom: 37px;
+    padding-left: 0;
+  }
+
+  .benefits__title {
+    @include font(43px, 50px);
+
+    margin-top: 48px;
+    margin-bottom: 38px;
+  }
+
+  .benefits__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .benefits__item {
+    @include font(20px, 22px);
+
+    width: 50%;
+    margin-bottom: 46px;
+
+    &--cash {
+      order: 2;
+    }
+
+    &--heart {
+      order: 4;
+    }
+
+    &--clew {
+      order: 1;
+    }
+
+    &--rocket {
+      order: 3;
+    }
+
+    &--present {
+      order: 5;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .benefits__wrapper {
+    width: 700px;
+    padding-bottom: 44px;
+  }
+
+  .benefits__title {
+    @include font(53px, 57px);
+
+    margin-top: 59px;
+  }
+
+  .benefits__item {
+    width: 350px;
+  }
+}

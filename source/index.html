@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="../css/style.css">
     <title>MISHKA - милые штуки ручной работы для дома</title>
   </head>
   <body>
   <header classs="page-header">
-    <a class="page-logo" href="page-header__logo">
+
+    <a class="logo" href="page-header__logo">
       <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="logo">
     </a>
     <nav class="nav">
-      <button class="nav__toggle" type="button">открыть меню</button>
+      <button class="nav__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
       <div class="nav__wrapper">
         <ul class="site-list nav__list">
           <li class="site-list__item">
@@ -32,51 +33,66 @@
     </nav>
   </header>
     <main class="main">
-      <div class="page-content__wrapper">
-        <section class="wrapper">
-          <h1 class="title">Милые штуки ручной работы для дома</h1>
-          <ul class="product-list">
-            <li class="product-list__btn product-list__btn--light"><a href="#">Предметы интерьера</a></li>
-            <li class="product-list__btn product-list__btn--dark"><a href="#">Детские игрушки</a></li>
-          </ul>
-        </section>
-        <section class="card-ads">
+      <section class="categories">
+        <div class="categories__intro  categories__intro--index">
+          <h1 class="categories__intro-title">Милые штуки ручной работы для дома</h1>
+        </div>
+        <ul class="categories__list">
+          <li class="product-list__item">
+            <a class="categories__link categories__link--interior" href="#">
+              <span class="categories__span categories__span--interior">Предметы интерьера</span>
+              <img src="" width="41" height="62" alt="">
+            </a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link categories__link--toys" href="#">
+              <span class="categories__span categories__span--toys">Детские игрушки</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="card-ads">
+          <header class="card-ads__top">
             <h2 class="card-ads__title">Вязаные корзинки <strong class="card-ads__advant">Товар недели</strong></h2>
             <p class="card-ads__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          </header>
             <table class="card-ads__table">
-              <tr class="card-ads__table-row">
-                <td class="card-ads__table-cell">Цвет:</td>
-                <td class="card-ads__table-cell">«Тиффани»/серый</td>
-              </tr>
-              <tr class="card-ads__table-row">
-                <td class="card-ads__table-cell">Диаметр:</td>
-                <td class="card-ads__table-cell">25 см</td>
-              </tr>
-              <tr class="card-ads__table-row">
-                <td class="card-ads__table-cell">Высота:</td>
-                <td class="card-ads__table-cell">15 см</td>
-              </tr>
-            </table>
-            <div class="card-ads__picture">
-              <img class="card-ads__img" src="http://placehold.it/260x315" width="260" height="315" alt="triple-set">
-            </div>
-            <div class="card__price">
-              Цена: 990 руб.
-            </div>
+            <tr class="card-ads__table-row">
+              <td class="card-ads__table-cell">Цвет:</td>
+              <td class="card-ads__table-value">«Тиффани»/серый</td>
+            </tr>
+            <tr class="card-ads__table-row">
+              <td class="card-ads__table-cell">Диаметр:</td>
+              <td class="card-ads__table-value">25 см</td>
+            </tr>
+            <tr class="card-ads__table-row">
+              <td class="card-ads__table-cell">Высота:</td>
+              <td class="card-ads__table-value">15 см</td>
+            </tr>
+          </table>
+          <div class="card-ads__picture">
+            <img class="card-ads__img" src="http://placehold.it/260x315" width="260" height="315" alt="triple-set">
+          </div>
+          <div class="card__bottom">
+            <span class="card__price"> Цена: 990 руб.</span>
             <button class="card__btn btn" type="button" class="card__btn btn" href="#">ЗАКАЗАТЬ</button>
-        </section>
-        <section class="features">
+          </div>
+      </section>
+      <section class="features">
+        <div class="features__wrapper">
           <h2 class="features__title">Коротко о нас:</h2>
-          <ul class="features__list">
-            <li class="features__item features__item--material ">Экологически чистые материалы</li>
-            <li class="features__item features__item--style">Скандинавский стиль по российской цене</li>
-            <li class="features__item features__item--likes">Увеличивает лайки на фотографиях</li>
-            <li class="features__item features__item--handmade">Связано вручную с любовью и умилением</li>
-            <li class="features__item features__item--producer">Поддержка отечественного производителя</li>
-            <li class="features__item features__item--giftwrap">Поставляется в подарочной упаковке</li>
-          </ul>
-        </section>
-        <section class="feedback">
+            <ul class="features__list">
+              <li class="features__item features__item--material ">Экологически чистые материалы</li>
+              <li class="features__item features__item--style">Скандинавский стиль по российской цене</li>
+              <li class="features__item features__item--likes">Увеличивает лайки на фотографиях</li>
+              <li class="features__item features__item--handmade">Связано вручную с любовью и умилением</li>
+              <li class="features__item features__item--producer">Поддержка отечественного производителя</li>
+              <li class="features__item features__item--giftwrap">Поставляется в подарочной упаковке</li>
+            </ul>
+          </div>
+      </section>
+      <section class="feedback">
+        <div class="feedback__wrapper">
           <h2 class="title title--feedback">Отзывы</h2>
           <div class="slider">
             <div class="slider__item">
@@ -94,29 +110,26 @@
               <button class="slider__arrow slider__arrow--next" type="button">next</button>
             </div>
           </div>
-        </section>
-        <section class="contacts">
-          <div class="contacts__container">
-            <h2 class="contacts__title">Контакты</h2>
-            <table class="contacts__table">
-              <tr class="contacts__item">
-                <td class="contacts__table-attr">e-mail:</td>
-                <td class="contacts__table-value"><a href="info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
-              </tr>
-              <tr class="contacts__item">
-                <td class="contacts__table-attr contacts__table-attr__address">адрес:</td>
-                <td class="contacts__table-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-              </tr>
-            </table>
-            <div class="contacts__map">
-              <img class="contacts__map-img" src="http://placehold.it/770x457" width="770" height="457" alt="map">
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__inner">
+            <div class="contacts__item">
+              <span class="contacts__field">e-mail:</span>
+              <a class="contacts__link" href="#">info@mimimishkashop.ru</a>
             </div>
-            <div class="contacts__btn">
-              <a class="btn btn-write" href="#">Напишите нам</a>
+            <div class="contacts__item  contacts__item--address">
+              <span class="contacts__field">адрес:</span>
+              <p class="contacts__text">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</p>
             </div>
           </div>
-        </section>
-      </div>
+          <div class="contacts__map">
+            <a class="btn contacts__btn" href="#">Напишите нам</a>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
@@ -149,7 +162,7 @@
           <label class="popup-form__label"><input class="popup-form__item-size" type="radio" name="item-size" value="m">m</label>
           <label class="popup-form__label"><input class="popup-form__item-size" type="radio" name="item-size" value="l">l</label>
           <br>
-          <button class="popup-form__btn btn" type="submit">Добавить</button>
+          <button class="popup__btn btn" type="submit">Добавить</button>
         </fieldset>
       </form>
     </div>

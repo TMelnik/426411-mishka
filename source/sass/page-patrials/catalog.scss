@@ -1,0 +1,12 @@
+.catalog {
+  @include center();
+  padding-bottom: 31px;
+}
+
+.page-content__wrapper {
+  width: 100%;
+
+  box-sizing: border-box;
+  padding-right: 9.4%;
+  padding-left: 9.4%;
+}

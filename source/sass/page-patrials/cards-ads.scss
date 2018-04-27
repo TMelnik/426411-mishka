@@ -1,0 +1,81 @@
+.fcard-ads {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 27px;
+  padding-right: 9.4%;
+  padding-bottom: 42px;
+  padding-left: 9.4%;
+}
+
+.card-ads__title {
+  @include font-set(700, 25px, 30px);
+
+  margin: 0;
+  margin-bottom: 5px;
+
+  color: $secondary-color;
+}
+
+.card-ads__advant {
+  @include font-set(700, 17px, 20px);
+
+  color: $fifth-color;
+  text-transform: uppercase;
+}
+
+.card-ads__description {
+  @include font(15px, 24px);
+
+  margin-top: 23px;
+  margin-bottom: 0;
+}
+
+.card-ads__table {
+  @include font(15px, 20px);
+
+  width: 100%;
+  margin-top: 18px;
+
+  border-collapse: collapse;
+}
+
+.card-ads__table-row {
+  border-bottom: 1px solid $third-color;
+}
+
+.card-ads__table-cell {
+  width: 36.7%;
+  height: 37px;
+}
+
+.card-ads__picture {
+  width: 100%;
+  height: auto;
+  margin-top: 28px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+.card__bottom {
+  margin-top: 24px;
+}
+
+.card__price {
+  @include font-set(700, 17px, 24px);
+
+  display: block;
+  margin-bottom: 26px;
+
+  text-align: center;
+}
+
+.card__btn {
+  line-height: 20px;
+}

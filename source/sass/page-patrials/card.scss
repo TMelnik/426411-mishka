@@ -1,0 +1,51 @@
+.card-wrapper {
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+
+.card {
+  padding-top: 26px;
+  padding-right: 26px;
+  padding-bottom: 27px;
+  padding-left: 27px;
+
+  border: 1px solid $third-color;
+}
+
+.card__title {
+  @include font-set(700, 17px, 24px);
+  color: $secondary-color;
+  text-decoration: none;
+}
+
+.card__description {
+  @include font(13px, 30px);
+
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 19px;
+}
+
+.card__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 21px;
+  border-top: 1px solid $third-color;
+}
+
+.card__price {
+  @include font-set(700, 15px, 24px);
+  color: $secondary-color;
+}
+
+.card__basket {
+  @include font(0, 0);
+
+  width: 21px;
+  height: 19px;
+  margin-top: 1px;
+
+  background: #ff8800;
+}
+

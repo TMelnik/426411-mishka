@@ -1,0 +1,13 @@
+.logo {
+  @include margin-center();
+
+  display: flex;
+  flex-direction: column;
+  width: 86px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.logo img {
+  border: none;
+}
